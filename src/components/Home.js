@@ -6,7 +6,7 @@ export default function Home() {
 		<div className="home">
 			<div className="home--container">
 				<div className="home--image-container">
-					<img className="home--image" src="JoonhoHan.png" alt="" />
+					<img className="home--image" src="JoonhoHan1.png" alt="" />
 				</div>
 				<div className="flex flex-col flex-space-between">
 					<div className="home--text">
@@ -15,7 +15,7 @@ export default function Home() {
 						<br />
 						<span
 							className="home--text-name"
-							style={{ fontWeight: 'bold', color: '#64b6ac' }}
+							style={{ fontWeight: 'bold', color: 'green' }}
 						>
 							Joonho Han.
 						</span>
@@ -27,7 +27,7 @@ export default function Home() {
 					<br />
 					<div className="flex flex-row flex-center">
 						<Link className="home--link" to="/projects">
-							My Projects
+							{'<View Projects/>'}
 						</Link>
 					</div>
 				</div>

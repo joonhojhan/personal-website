@@ -6,22 +6,22 @@ export default function Navbar() {
 		<nav className="nav">
 			<div className="flex flex-col flex-center">
 				<Link to="/">
-					<img className="nav--icon" src="JoonhoHan.png" alt="logo" />
+					<img className="nav--icon" src="JoonhoHan1.png" alt="logo" />
 				</Link>
 			</div>
 			<div className="flex flex-col flex-center">
 				<div>
 					<Link to="/" className="nav--link">
-						Home
+						{'<Home/>'}
 					</Link>
 					<Link to="/about" className="nav--link">
-						About
+						{'<About/>'}
 					</Link>
 					<Link to="/projects" className="nav--link">
-						Projects
+						{'<Projects/>'}
 					</Link>
 					<Link to="/contact" className="nav--link">
-						Contact
+						{'<Contact/>'}
 					</Link>
 				</div>
 			</div>

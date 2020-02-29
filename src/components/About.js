@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function About() {
 	return (
-		<div className="home about">
+		<div className="home">
 			<div className="home--container">
 				<div className="home--image-container">
-					<img className="home--image" src="JoonhoHan.png" alt="" />
+					<img className="about--image" src="JoonhoHan2.jpeg" alt="" />
 				</div>
 				<div className="flex flex-col flex-space-between">
 					<p className="about--text">

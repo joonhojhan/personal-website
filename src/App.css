@@ -4,65 +4,25 @@
 	/* height: 150vh; */
 }
 
-.flex {
-	display: flex;
-}
-
-.flex-row {
-	flex-direction: row;
-}
-
-.flex-col {
-	flex-direction: column;
-}
-
-.flex-center {
-	justify-content: center;
-}
-
-.flex-space-between {
-	justify-content: space-between;
-}
-
-.flex-space-evenly {
-	justify-content: space-evenly;
-}
-
-.flex-space-around {
-	justify-content: space-around;
-}
-
-.flex-end {
-	justify-content: flex-end;
-}
-
-.flex-start {
-	justify-content: flex-start;
-}
-
 .nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	background-color: white;
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	top: 0;
 	overflow: hidden;
-	height: 7vh;
+	/* height: 7vh; */
+	min-height: 65px;
 }
 
 .nav--icon {
 	margin-left: 20px;
 	margin-right: 20px;
-	color: #64b6ac;
-	height: 5vh;
-	width: 5vh;
+	height: 50px;
+	width: auto;
 	border-radius: 50%;
-}
-
-.nav--margin {
-	margin-top: 7vh;
 }
 
 .nav--link {
@@ -71,23 +31,27 @@
 	margin-left: 20px;
 	margin-right: 20px;
 	font-weight: bold;
-	color: #64b6ac;
+	color: black;
 	position: relative;
 	letter-spacing: 1px;
 }
 
-.nav--link:visited {
-	color: #64b6ac;
+.nav--link:hover,
+.home--link:hover,
+.contact--button:hover {
+	color: green;
 }
 
-.nav--link:before {
+.nav--link:before,
+.home--link:before,
+.contact--button:before {
 	content: '';
 	position: absolute;
 	width: 100%;
 	height: 2px;
 	bottom: 0;
 	left: 0;
-	background-color: #64b6ac;
+	background-color: green;
 	visibility: hidden;
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
@@ -95,14 +59,16 @@
 	transition: all 0.3s ease-in-out 0s;
 }
 
-.nav--link:hover:before {
+.nav--link:hover:before,
+.home--link:hover:before,
+.contact--button:hover:before {
 	visibility: visible;
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
 }
 
 .home {
-	height: 93vh;
+	height: calc(100vh - 65px);
 	margin-left: 15vh;
 	margin-right: 15vh;
 	display: flex;
@@ -133,19 +99,11 @@
 
 .home--link {
 	font-size: 2rem;
-	border: 3px solid #64b6ac;
-	border-radius: 15px;
+	color: black;
+	font-weight: bold;
 	text-decoration: none;
-	width: 250px;
-}
-
-.home--link:visited {
-	color: #64b6ac;
-}
-
-.home--link:hover {
-	color: white;
-	background-color: #64b6ac;
+	margin-bottom: 65px;
+	position: relative;
 }
 
 .about--text {
@@ -157,14 +115,79 @@
 }
 
 .about--text-header {
-	font-size: 2rem;
+	font-size: 3rem;
 	font-weight: bold;
+}
+
+.about--image {
+	border-radius: 50px;
+	max-height: 500px;
+	width: auto;
+	margin-bottom: 1rem;
+}
+
+.contact {
+	height: calc(100vh - 65px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contact--form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 320px;
+	margin: 45px auto;
+}
+
+.contact--header {
+	font-size: 3rem;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+.contact--field {
+	position: relative;
+	margin: 45px 0;
+}
+
+.contact--field input,
+textarea {
+	background: none;
+	color: #333333;
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	display: block;
+	width: 320px;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #333333;
+}
+
+input:focus,
+textarea,
+.contact--button:active {
+	outline: none !important;
+}
+
+.contact--button {
+	cursor: pointer;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: black;
+	border: none;
+	border-radius: 15px;
+	position: relative;
 }
 
 @media only screen and (max-width: 1150px) {
 	.home {
 		margin-left: 0;
 		margin-right: 0;
+		height: 100%;
 	}
 	.home--container {
 		flex-direction: column;
@@ -180,16 +203,71 @@
 	}
 	.home--link {
 		font-size: 1.5rem;
-		width: 200px;
+		width: 250px;
 	}
 	.about--text {
 		align-self: center;
 		width: 800px;
 	}
+	.about--image {
+		max-height: 500px;
+	}
 }
 
 @media only screen and (max-width: 850px) {
 	.about--text {
-		width: 500px;
+		width: 450px;
+	}
+	.about--image {
+		max-height: 350px;
+	}
+}
+
+@media only screen and (max-height: 550px) {
+	.home {
+		height: 100%;
+		margin-top: 7vh;
+	}
+	.home--image {
+		max-height: 300px;
+	}
+	.home--text {
+		font-size: 2rem;
+	}
+	.home--text-name {
+		font-size: 3rem;
+	}
+	.home--link {
+		font-size: 1.5rem;
+		width: 250px;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-height: 700px) {
+	.contact {
+		height: 100%;
+		margin-top: 7vh;
+	}
+}
+
+@media only screen and (max-width: 500px) and (max-height: 850px) {
+	.home--image {
+		max-height: 300px;
+	}
+	.home--link {
+		margin-bottom: 20px;
+	}
+	.home--text {
+		font-size: 2rem;
+	}
+	.home--text-name {
+		font-size: 3rem;
+	}
+	.about--image {
+		max-height: 300px;
+	}
+	.about--text {
+		width: 300px;
 	}
 }
