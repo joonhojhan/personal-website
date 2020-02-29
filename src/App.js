@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import './util.css';
 import Routes from './routes';
-import { Navbar } from './components';
+import { Navbar, NavbarMenu } from './components';
 
 function App() {
+	const [toggleModal, setToggleModal] = useState(false);
+
 	return (
 		<div className="App">
-			<Navbar />
+			<Navbar toggleModal={toggleModal} setToggleModal={setToggleModal} />
+			<NavbarMenu toggleModal={toggleModal} />
 			<div className="nav--margin">
 				<Routes />
 			</div>

@@ -53,7 +53,7 @@ export default function Contact() {
 					/>
 				</div>
 				<button className="contact--button" type="submit">
-					{'<Send Message/>'}
+					{'<Send Message />'}
 				</button>
 			</form>
 		</div>

@@ -37,3 +37,11 @@
 .nav--margin {
 	margin-top: 65px;
 }
+
+.hidden {
+	display: none;
+}
+
+.show {
+	display: flex;
+}

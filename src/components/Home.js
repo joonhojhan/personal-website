@@ -27,7 +27,7 @@ export default function Home() {
 					<br />
 					<div className="flex flex-row flex-center">
 						<Link className="home--link" to="/projects">
-							{'<View Projects/>'}
+							{'<View Projects />'}
 						</Link>
 					</div>
 				</div>
