@@ -8,7 +8,7 @@ export default function NavbarMenu(props) {
 		<div
 			className={`nav--margin nav--menu${toggleModal ? ' nav--menu-active' : ''}`}
 		>
-			<Link to="/home" className="nav--menu-link">
+			<Link to="/" className="nav--menu-link">
 				{'<Home />'}
 			</Link>
 			<Link to="/about" className="nav--menu-link">
