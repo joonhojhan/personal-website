@@ -83,7 +83,7 @@
 }
 
 .home--image {
-	border-radius: 50%;
+	border-radius: 50px;
 	max-height: 500px;
 	width: auto;
 	margin-bottom: 1rem;
