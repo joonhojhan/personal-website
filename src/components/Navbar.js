@@ -6,24 +6,38 @@ export default function Navbar(props) {
 	return (
 		<nav className="nav">
 			<div className="flex flex-col flex-center">
-				<Link to="/">
-					<img className="nav--icon" src="JoonhoHan1.png" alt="logo" />
+				<Link to="/" className="nav--logo" onClick={() => setToggleModal(false)}>
+					{'<Joonho />'}
 				</Link>
 			</div>
 			<div className="flex flex-col flex-center">
 				<div>
-					<Link to="/" className="nav--link">
-						{'<Home />'}
-					</Link>
-					<Link to="/about" className="nav--link">
-						{'<About />'}
-					</Link>
 					<Link to="/projects" className="nav--link">
 						{'<Projects />'}
+					</Link>
+
+					<Link to="/about" className="nav--link">
+						{'<About />'}
 					</Link>
 					<Link to="/contact" className="nav--link">
 						{'<Contact />'}
 					</Link>
+					<a
+						href="https://linkedin.com/in/joonhojhan"
+						className="nav--link"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{'<LinkedIn />'}
+					</a>
+					<a
+						href="https://github.com/joonhojhan"
+						className="nav--link"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{'<GitHub />'}
+					</a>
 					{!toggleModal ? (
 						<i
 							className="fas fa-bars nav--menu-icon"
@@ -31,7 +45,7 @@ export default function Navbar(props) {
 						></i>
 					) : (
 						<i
-							class="fas fa-times nav--menu-icon"
+							className="fas fa-times nav--menu-icon"
 							onClick={() => setToggleModal(!toggleModal)}
 						></i>
 					)}

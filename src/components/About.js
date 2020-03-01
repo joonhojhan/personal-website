@@ -22,6 +22,11 @@ export default function About() {
 						led teams to completion of projects, led white boarding sessions for
 						algorithms, and realized how much I love software engineering.
 					</p>
+					<div className="flex flex-row flex-center">
+						<a href="Joonho_Han.pdf" className="home--link" download>
+							{'<Download Resume />'}
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

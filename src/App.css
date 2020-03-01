@@ -17,16 +17,19 @@
 	min-height: 65px;
 }
 
-.nav--icon {
+.nav--logo {
+	font-size: 1.8rem;
+	text-decoration: none;
 	margin-left: 20px;
 	margin-right: 20px;
-	height: 50px;
-	width: auto;
-	border-radius: 50%;
+	font-weight: bold;
+	color: black;
+	position: relative;
+	letter-spacing: 1px;
 }
 
 .nav--link {
-	font-size: 24px;
+	font-size: 1.2rem;
 	text-decoration: none;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -39,14 +42,16 @@
 .nav--link:hover,
 .nav--menu-link:hover,
 .home--link:hover,
-.contact--button:hover {
+.contact--button:hover,
+.nav--logo:hover {
 	color: green;
 }
 
 .nav--link:before,
 .nav--menu-link:before,
 .home--link:before,
-.contact--button:before {
+.contact--button:before,
+.nav--logo:before {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -64,7 +69,8 @@
 .nav--link:hover:before,
 .nav--menu-link:hover:before,
 .home--link:hover:before,
-.contact--button:hover:before {
+.contact--button:hover:before,
+.nav--logo:hover:before {
 	visibility: visible;
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
@@ -90,7 +96,7 @@
 }
 
 .nav--menu-link {
-	font-size: 24px;
+	font-size: 1.2rem;
 	text-decoration: none;
 	margin: 5px auto;
 	font-weight: bold;
@@ -239,7 +245,6 @@ textarea,
 	}
 	.home--link {
 		font-size: 1.5rem;
-		width: 250px;
 	}
 	.about--text {
 		align-self: center;
@@ -250,13 +255,7 @@ textarea,
 	}
 }
 
-@media only screen and (max-width: 850px) {
-	.about--text {
-		width: 450px;
-	}
-	.about--image {
-		max-height: 350px;
-	}
+@media only screen and (max-width: 1050px) {
 	.nav--link {
 		display: none;
 	}
@@ -268,6 +267,15 @@ textarea,
 	}
 	.nav--menu-active {
 		display: flex;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.about--text {
+		width: 450px;
+	}
+	.about--image {
+		max-height: 350px;
 	}
 }
 
@@ -287,7 +295,6 @@ textarea,
 	}
 	.home--link {
 		font-size: 1.5rem;
-		width: 250px;
 		margin-bottom: 20px;
 	}
 }

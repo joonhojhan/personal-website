@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div className="App">
 			<Navbar toggleModal={toggleModal} setToggleModal={setToggleModal} />
-			<NavbarMenu toggleModal={toggleModal} />
+			<NavbarMenu toggleModal={toggleModal} setToggleModal={setToggleModal} />
 			<div className="nav--margin">
 				<Routes />
 			</div>
