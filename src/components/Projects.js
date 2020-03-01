@@ -1,11 +1,20 @@
 import React from 'react';
+import Project from './Project';
+import projectList from '../projectList';
 
 export default function Projects() {
 	return (
 		<div className="projects">
-			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quaerat
-			veritatis a reprehenderit, quod qui optio, ea, sequi atque labore minus
-			temporibus sed laudantium modi beatae laboriosam id quia! Blanditiis?
+			{projectList.map(proj => (
+				<Project
+					name={proj.name}
+					imageUrl={proj.imageUrl}
+					description={proj.description}
+					technologies={proj.technologies}
+					github={proj.github}
+					deployed={proj.deployed}
+				/>
+			))}
 		</div>
 	);
 }

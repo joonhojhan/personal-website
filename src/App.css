@@ -255,6 +255,55 @@ textarea,
 	}
 }
 
+.projects {
+	display: flex;
+	flex-direction: column;
+	justify-self: center;
+	margin: 0 15vh;
+}
+
+.project {
+	margin: 0px auto;
+	margin-bottom: 45px;
+	/* height: calc(100vh - 65px); */
+	width: 100%;
+	display: flex;
+}
+
+.project--content {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin-left: 50px;
+}
+
+.project--content-header {
+	font-size: 3rem;
+	font-weight: bold;
+	/* margin-bottom: 2rem; */
+}
+
+.project--content-label {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-top: 2rem;
+}
+
+.project--content-description,
+.project--content-technologies,
+.project--content-github,
+.project--content-deployed {
+	font-size: 1.2rem;
+}
+
+.project--content-label,
+.project--content-description,
+.project--content-technologies,
+.project--content-github,
+.project--content-deployed {
+	margin-bottom: 0.5rem;
+}
+
 @media only screen and (max-width: 1050px) {
 	.nav--link {
 		display: none;
