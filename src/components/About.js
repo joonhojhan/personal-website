@@ -23,7 +23,11 @@ export default function About() {
 						algorithms, and realized how much I love software engineering.
 					</p>
 					<div className="flex flex-row flex-center">
-						<a href="Joonho_Han.pdf" className="home--link" download>
+						<a
+							href="Joonho-Han-Software-Engineer-Resume.pdf"
+							className="home--link"
+							download
+						>
 							{'<Download Resume />'}
 						</a>
 					</div>
