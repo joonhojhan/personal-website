@@ -7,6 +7,7 @@ export default function Projects() {
 		<div className="projects">
 			{projectList.map(proj => (
 				<Project
+					key={proj.name}
 					name={proj.name}
 					imageUrl={proj.imageUrl}
 					description={proj.description}

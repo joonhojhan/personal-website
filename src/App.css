@@ -109,7 +109,8 @@
 	color: green;
 }
 
-.home {
+.home,
+.project {
 	height: calc(100vh - 65px);
 	margin-left: 15vh;
 	margin-right: 15vh;
@@ -118,7 +119,8 @@
 	justify-content: center;
 }
 
-.home--container {
+.home--container,
+.project--container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -148,7 +150,8 @@
 	position: relative;
 }
 
-.about--text {
+.about--text,
+.project--content {
 	font-size: 1.2rem;
 	margin-left: 2rem;
 	margin-right: 2rem;
@@ -156,12 +159,14 @@
 	width: 519.5px;
 }
 
-.about--text-header {
+.about--text-header,
+.project--content-header {
 	font-size: 3rem;
 	font-weight: bold;
 }
 
-.about--image {
+.about--image,
+.project--image {
 	border-radius: 50px;
 	max-height: 500px;
 	width: auto;
@@ -225,64 +230,6 @@ textarea,
 	position: relative;
 }
 
-@media only screen and (max-width: 1150px) {
-	.home {
-		margin-left: 0;
-		margin-right: 0;
-		height: 100%;
-	}
-	.home--container {
-		flex-direction: column;
-	}
-	.home--image {
-		max-height: 350px;
-	}
-	.home--text {
-		font-size: 2.5rem;
-	}
-	.home--text-name {
-		font-size: 3.5rem;
-	}
-	.home--link {
-		font-size: 1.5rem;
-	}
-	.about--text {
-		align-self: center;
-		width: 800px;
-	}
-	.about--image {
-		max-height: 500px;
-	}
-}
-
-.projects {
-	display: flex;
-	flex-direction: column;
-	justify-self: center;
-	margin: 0 15vh;
-}
-
-.project {
-	margin: 0px auto;
-	margin-bottom: 45px;
-	/* height: calc(100vh - 65px); */
-	width: 100%;
-	display: flex;
-}
-
-.project--content {
-	display: flex;
-	flex-direction: column;
-	text-align: left;
-	margin-left: 50px;
-}
-
-.project--content-header {
-	font-size: 3rem;
-	font-weight: bold;
-	/* margin-bottom: 2rem; */
-}
-
 .project--content-label {
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -304,6 +251,45 @@ textarea,
 	margin-bottom: 0.5rem;
 }
 
+@media only screen and (max-width: 1150px) {
+	.home {
+		margin-left: 0;
+		margin-right: 0;
+		height: 100%;
+	}
+	.home--container {
+		flex-direction: column;
+	}
+	.home--image {
+		max-height: 350px;
+	}
+	.home--text {
+		font-size: 2.5rem;
+	}
+	.home--text-name {
+		font-size: 3.5rem;
+	}
+	.home--link {
+		font-size: 1.5rem;
+	}
+	.about--text,
+	.project--content {
+		align-self: center;
+		width: 800px;
+	}
+
+	.project--content {
+		margin-bottom: 65px;
+	}
+	.about--image {
+		max-height: 500px;
+	}
+	.project--image {
+		max-height: auto;
+		width: 800px;
+	}
+}
+
 @media only screen and (max-width: 1050px) {
 	.nav--link {
 		display: none;
@@ -320,11 +306,24 @@ textarea,
 }
 
 @media only screen and (max-width: 850px) {
-	.about--text {
+	.about--text,
+	.project--content {
+		display: flex;
+		flex-direction: column;
 		width: 450px;
 	}
 	.about--image {
 		max-height: 350px;
+	}
+
+	.project--image {
+		max-height: auto;
+		width: 450px;
+	}
+
+	.about--text-header,
+	.project--content-header {
+		align-self: center;
 	}
 }
 
@@ -371,7 +370,25 @@ textarea,
 	.about--image {
 		max-height: 300px;
 	}
-	.about--text {
+	.project--image {
 		width: 300px;
+		max-height: 200px;
+	}
+	.about--text,
+	.project--content {
+		width: 300px;
+	}
+	.project--content-header {
+		font-size: 2.5rem;
+		text-align: center;
+	}
+	.project--content-label {
+		font-size: 1.5rem;
+	}
+	.project--content-description,
+	.project--content-technologies,
+	.project--content-github,
+	.project--content-deployed {
+		font-size: 1rem;
 	}
 }
