@@ -3,6 +3,7 @@ import { NavLink as Link } from 'react-router-dom';
 
 export default function Navbar(props) {
 	const { toggleModal, setToggleModal } = props;
+
 	return (
 		<nav className="nav">
 			<div className="flex flex-col flex-center">

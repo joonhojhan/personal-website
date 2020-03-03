@@ -15,6 +15,7 @@
 	overflow: hidden;
 	/* height: 7vh; */
 	min-height: 65px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .nav--logo {
@@ -85,6 +86,7 @@
 	z-index: 1000;
 	background-color: white;
 	display: none;
+	box-shadow: 0 4px 8px -8px rgba(0, 0, 0, 0.2), 0 6px 20px -20px rgba(0, 0, 0, 0.19);
 }
 
 .nav--menu-active {
@@ -126,12 +128,15 @@
 	justify-content: space-around;
 }
 
-.home--image {
+.home--image,
+.about--image,
+.project--image {
 	border-radius: 50px;
 	max-height: 500px;
 	width: auto;
 	margin-bottom: 1rem;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 20px auto;
 }
 
 .home--text {
@@ -166,14 +171,14 @@
 	font-weight: bold;
 }
 
-.about--image,
+/* .about--image,
 .project--image {
 	border-radius: 50px;
 	max-height: 500px;
 	width: auto;
 	margin-bottom: 1rem;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 
 .project--image {
 	max-height: 583.5px;
