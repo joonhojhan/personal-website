@@ -1,7 +1,15 @@
 import React from 'react';
 
 export default function Project(props) {
-	const { name, description, imageUrl, technologies, github, deployed } = props;
+	const {
+		name,
+		description,
+		imageUrl,
+		technologies,
+		github,
+		deployed,
+		presentation,
+	} = props;
 	return (
 		<div className="home">
 			<div className="home--container">
@@ -29,6 +37,15 @@ export default function Project(props) {
 							<div className="project--content-deployed">
 								Check out {name}{' '}
 								<a href={deployed} target="_blank" rel="noopener noreferrer">
+									here
+								</a>
+								.
+							</div>
+						)}
+						{presentation && (
+							<div className="project--content-presentation">
+								Check out the presentation{' '}
+								<a href={presentation} target="_blank" rel="noopener noreferrer">
 									here
 								</a>
 								.
