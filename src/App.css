@@ -1,7 +1,6 @@
 .App {
 	text-align: center;
 	background-color: white;
-	/* height: 150vh; */
 }
 
 .nav {
@@ -13,9 +12,16 @@
 	width: 100vw;
 	top: 0;
 	overflow: hidden;
-	/* height: 7vh; */
 	min-height: 65px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home--text-name,
+.about--text-header,
+.project--content-header,
+.project--content-label,
+.contact--header {
+	font-family: 'Playfair Display', serif;
 }
 
 .nav--logo {
@@ -171,15 +177,6 @@
 	font-weight: bold;
 }
 
-/* .about--image,
-.project--image {
-	border-radius: 50px;
-	max-height: 500px;
-	width: auto;
-	margin-bottom: 1rem;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} */
-
 .project--image {
 	max-height: 583.5px;
 }
@@ -264,7 +261,7 @@ textarea,
 	margin-bottom: 0.5rem;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1250px) {
 	.home {
 		margin-left: 0;
 		margin-right: 0;
