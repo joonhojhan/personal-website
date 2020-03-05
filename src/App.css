@@ -250,7 +250,8 @@ textarea,
 .project--content-description,
 .project--content-technologies,
 .project--content-github,
-.project--content-deployed {
+.project--content-deployed,
+.project--content-presentation {
 	font-size: 1.2rem;
 }
 
@@ -258,7 +259,8 @@ textarea,
 .project--content-description,
 .project--content-technologies,
 .project--content-github,
-.project--content-deployed {
+.project--content-deployed,
+.project--content-presentation {
 	margin-bottom: 0.5rem;
 }
 
@@ -399,7 +401,8 @@ textarea,
 	.project--content-description,
 	.project--content-technologies,
 	.project--content-github,
-	.project--content-deployed {
+	.project--content-deployed,
+	.project--content-presentation {
 		font-size: 1rem;
 	}
 }
