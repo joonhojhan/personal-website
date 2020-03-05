@@ -16,7 +16,7 @@ export default function About() {
 					</p>
 					<div className="flex flex-row flex-center">
 						<a
-							href="Joonho-Han-Software-Engineer-Resume.pdf"
+							href="/downloads/Joonho-Han-Software-Engineer-Resume.pdf"
 							className="home--link"
 							download
 						>
