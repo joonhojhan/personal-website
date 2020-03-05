@@ -16,9 +16,8 @@ export default function About() {
 					</p>
 					<div className="flex flex-row flex-center">
 						<a
-							href="/downloads/Joonho-Han-Software-Engineer-Resume.pdf"
+							href="https://drive.google.com/uc?export=download&id=12UIJ__obI4KuHWeuNxy3mOLkYZnEgUNM"
 							className="home--link"
-							download
 						>
 							{'<Download Resume />'}
 						</a>
