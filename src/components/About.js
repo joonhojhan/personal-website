@@ -16,7 +16,7 @@ export default function About() {
 					</p>
 					<div className="flex flex-row flex-center">
 						<a
-							href="https://drive.google.com/uc?export=download&id=12UIJ__obI4KuHWeuNxy3mOLkYZnEgUNM"
+							href="https://drive.google.com/uc?export=download&id=1r9z08WF6_OBkRAtuR4gk4x33kb6PakiL"
 							className="home--link"
 						>
 							{'<Download Resume />'}
